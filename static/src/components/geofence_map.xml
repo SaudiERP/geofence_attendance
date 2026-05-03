@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="geofence_attendance.GeofenceMap">
+        <div class="o_geofence_map_widget">
+            <div class="o_geofence_map_toolbar">
+                <input type="text"
+                       class="form-control form-control-sm o_geofence_map_search"
+                       t-ref="searchInput"
+                       placeholder="Search address or place..."
+                       t-on-keydown="onSearch"/>
+                <button type="button"
+                        class="btn btn-sm btn-secondary"
+                        t-on-click.stop.prevent="onUseMyLocation">
+                    <i class="fa fa-location-arrow me-1"/>
+                    Use my location
+                </button>
+            </div>
+            <div t-ref="mapContainer" class="o_geofence_map_canvas"/>
+            <div t-if="state.loading" class="o_geofence_map_status">
+                <i class="fa fa-spinner fa-spin me-1"/> Loading map...
+            </div>
+            <div t-if="state.error" class="o_geofence_map_status text-danger">
+                <i class="fa fa-exclamation-triangle me-1"/>
+                Map could not be loaded. Switch back to manual entry, or check
+                that this browser can reach unpkg.com and openstreetmap.org.
+            </div>
+            <div class="o_geofence_map_hint text-muted small">
+                Click on the map to set the geofence center, drag the marker
+                to adjust, or use the search box and "Use my location" button.
+            </div>
+        </div>
+    </t>
+
+</templates>

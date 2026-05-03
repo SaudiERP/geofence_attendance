@@ -1,0 +1,213 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* geofence_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-01 00:00+0000\n"
+"PO-Revision-Date: 2026-01-01 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_work_location__use_geofence
+msgid "Enable Geofence"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_work_location__geofence_latitude
+msgid "Latitude"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_work_location__geofence_longitude
+msgid "Longitude"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_work_location__geofence_radius
+msgid "Allowed Radius (meters)"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_work_location__geofence_input_mode
+msgid "Coordinates Input"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields.selection,name:geofence_attendance.selection__hr_work_location__geofence_input_mode__manual
+msgid "Enter Coordinates Manually"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields.selection,name:geofence_attendance.selection__hr_work_location__geofence_input_mode__map
+msgid "Pick from Map"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_employee__work_location_use_geofence
+msgid "Geofence Enabled"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_employee__work_location_latitude
+msgid "Location Latitude"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_employee__work_location_longitude
+msgid "Location Longitude"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_employee__work_location_radius
+msgid "Allowed Radius (m)"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model.fields,field_description:geofence_attendance.field_hr_attendance__geofence_work_location_id
+msgid "Geofence Work Location"
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.ui.view,arch_db:geofence_attendance.view_hr_employee_form_geofence
+msgid "Geofence Area"
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.ui.view,arch_db:geofence_attendance.view_hr_work_location_geofence_form
+msgid "Geofence"
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.ui.view,arch_db:geofence_attendance.view_hr_work_location_geofence_form
+msgid "Work Location"
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.ui.view,arch_db:geofence_attendance.view_hr_work_location_geofence_form
+msgid "e.g. Head Office"
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.actions.act_window,help:geofence_attendance.action_hr_work_location_geofence
+msgid "Define work locations and their geofence boundaries."
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.actions.act_window,help:geofence_attendance.action_hr_work_location_geofence
+msgid ""
+"Enable the geofence on a location and provide its coordinates\n"
+"                and radius. Employees assigned to that location will only be\n"
+"                allowed to check in or out from within the configured area."
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.actions.act_window,name:geofence_attendance.action_hr_work_location_geofence
+#: model:ir.ui.menu,name:geofence_attendance.menu_hr_work_location_geofence
+msgid "Geofence Locations"
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.ui.view,arch_db:geofence_attendance.view_hr_work_location_geofence_search
+msgid "Geofence Status"
+msgstr ""
+
+#. module: geofence_attendance
+#: model_terms:ir.ui.view,arch_db:geofence_attendance.view_hr_work_location_geofence_search
+msgid "Geofence Disabled"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model,name:geofence_attendance.model_hr_employee
+msgid "Employee"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model,name:geofence_attendance.model_hr_work_location
+msgid "Work Location"
+msgstr ""
+
+#. module: geofence_attendance
+#: model:ir.model,name:geofence_attendance.model_hr_attendance
+msgid "Attendance"
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-python
+#: code:addons/geofence_attendance/models/hr_employee.py:0
+msgid ""
+"Location access is required to register attendance. Please enable location "
+"services in your browser and try again."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-python
+#: code:addons/geofence_attendance/models/hr_employee.py:0
+msgid "Invalid location data received from the device."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-python
+#: code:addons/geofence_attendance/models/hr_employee.py:0
+msgid ""
+"You are outside the allowed attendance area for '%(loc)s'.\n"
+"Your distance: %(dist).0f m\n"
+"Allowed radius: %(rad).0f m"
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-python
+#: code:addons/geofence_attendance/models/hr_work_location.py:0
+msgid "Latitude must be between -90 and 90."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-python
+#: code:addons/geofence_attendance/models/hr_work_location.py:0
+msgid "Longitude must be between -180 and 180."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-python
+#: code:addons/geofence_attendance/models/hr_work_location.py:0
+msgid "Allowed radius must be greater than zero."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-javascript
+#: code:addons/geofence_attendance/static/src/components/geofence_map.xml:0
+msgid "Search address or place..."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-javascript
+#: code:addons/geofence_attendance/static/src/components/geofence_map.xml:0
+msgid "Use my location"
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-javascript
+#: code:addons/geofence_attendance/static/src/components/geofence_map.xml:0
+msgid "Loading map..."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-javascript
+#: code:addons/geofence_attendance/static/src/components/geofence_map.xml:0
+msgid "Could not load the map. Check your internet connection."
+msgstr ""
+
+#. module: geofence_attendance
+#. odoo-javascript
+#: code:addons/geofence_attendance/static/src/components/geofence_map.xml:0
+msgid ""
+"Click on the map to set the geofence center, drag the marker\n"
+"                to adjust, or use the search box and \"Use my location\" button."
+msgstr ""

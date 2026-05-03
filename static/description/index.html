@@ -1,0 +1,291 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan" style="color:#2163E8;">Geofence Attendance</h2>
+            <h3 class="oe_slogan">Restrict employee attendance to specific GPS areas - natively integrated with Odoo Attendances.</h3>
+            <p style="text-align:center;" class="oe_mt32">
+                <em>by</em> <a href="https://saudierp.work"><strong>SaudiERP</strong></a>
+            </p>
+        </div>
+        <div class="oe_span12">
+            <img src="banner.png" alt="Geofence Attendance" class="img-fluid"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12" style="text-align:center;">
+            <h2 class="oe_slogan">Watch it in action</h2>
+            <p class="oe_mt32">From setup to enforcement in under two minutes.</p>
+            <iframe width="720" height="405"
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                    title="Geofence Attendance Demo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="max-width:100%;">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Why Geofence Attendance?</h2>
+            <p class="oe_mt32" style="text-align:center;">
+                Eliminate buddy-punching and remote check-ins from unauthorised
+                locations. With a simple toggle on each work location, you ensure
+                every check-in and check-out happens within an allowed radius of
+                the office, branch, warehouse, or site.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;">Per-location geofence settings</h3>
+            <p class="oe_mt32">
+                Enable the geofence on each work location, then enter its center
+                coordinates and the allowed radius in meters. Disabled locations
+                fall back to standard Odoo behaviour.
+            </p>
+            <ul>
+                <li>Toggle to enable / disable geofencing</li>
+                <li>Latitude and longitude with 7-digit precision</li>
+                <li>Allowed radius in meters</li>
+                <li>Server-side validation of all inputs</li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;">Accurate distance enforcement</h3>
+            <p class="oe_mt32">
+                Distance between the employee and the work location is computed
+                using the Haversine formula on the great-circle, ensuring
+                real-world accuracy regardless of latitude.
+            </p>
+            <ul>
+                <li>Enforced on every check-in and check-out</li>
+                <li>Works in Kiosk Mode and the My Attendance page</li>
+                <li>Clear, translated error messages when out of range</li>
+                <li>Logged for audit purposes</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;">Pick from an interactive map</h3>
+            <p class="oe_mt32">
+                Choose how to set the geofence center: enter coordinates by
+                hand, or pick a point on an interactive map with built-in
+                address search and a "Use my location" button.
+            </p>
+            <ul>
+                <li>Click anywhere on the map to set the center</li>
+                <li>Drag the marker to fine-tune the position</li>
+                <li>Search any address worldwide</li>
+                <li>One-tap capture of the device's current GPS</li>
+                <li>Visual circle showing the allowed radius</li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="text-align:left;">Smart location resolution</h3>
+            <p class="oe_mt32">
+                The geofence follows the employee's current work location
+                automatically, with sensible fallbacks built in. Whether you 
+                use a single default location, a different place for each day 
+                of the week, or date-specific assignments, the right geofence 
+                applies on the right day - no extra configuration needed.
+            </p>
+            <ul>
+                <li>Per-day work locations supported (Mon, Tue, Wed, ...)</li>
+                <li>Works with Odoo's date-based employee versions</li>
+                <li>Falls back to the default work location when no day-specific value is set</li>
+                <li>"Active Geofence Today" shown on the employee form</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Screenshots</h2>
+        </div>
+        <div class="oe_span12">
+            <img src="screenshot_1.png" alt="Set up your geofence visually" class="img-fluid" style="border:1px solid #ddd; border-radius:4px;"/>
+            <p style="text-align:center;" class="oe_mt32">
+                <strong>1. Set up your geofence visually</strong><br/>
+                Enable the toggle, enter coordinates manually, or click anywhere on the
+                interactive map to set the center. The blue circle shows the allowed
+                radius in real time.
+            </p>
+        </div>
+        <div class="oe_span12">
+            <img src="screenshot_2.png" alt="Out-of-range protection" class="img-fluid" style="border:1px solid #ddd; border-radius:4px;"/>
+            <p style="text-align:center;" class="oe_mt32">
+                <strong>2. Out-of-range protection</strong><br/>
+                When an employee tries to check in or out from outside the allowed area,
+                Odoo blocks the action and shows the exact distance and allowed radius.
+            </p>
+        </div>
+        <div class="oe_span12">
+            <img src="screenshot_3.png" alt="Smart location resolution" class="img-fluid" style="border:1px solid #ddd; border-radius:4px;"/>
+            <p style="text-align:center;" class="oe_mt32">
+                <strong>3. Smart location resolution</strong><br/>
+                Assign a different work location for each day of the week, or use Odoo's
+                date-based employee versions for temporary assignments. The geofence
+                automatically applies the right location, with a clean fallback to the
+                default work location when no day-specific value is set.
+            </p>
+        </div>
+        <div class="oe_span12">
+            <img src="screenshot_4.png" alt="Geofence summary on the employee form" class="img-fluid" style="border:1px solid #ddd; border-radius:4px;"/>
+            <p style="text-align:center;" class="oe_mt32">
+                <strong>4. Geofence summary on the employee form</strong><br/>
+                See at a glance whether geofencing is enabled for the employee's
+                work location, the configured area, and which geofence is active today.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">How it works</h2>
+        </div>
+        <div class="oe_span4">
+            <h4 style="color:#2163E8;">1. Define</h4>
+            <p>Open <em>Attendances - Geofence Locations</em>, enable the toggle, and either enter coordinates manually or pick the center on the map.</p>
+        </div>
+        <div class="oe_span4">
+            <h4 style="color:#2163E8;">2. Assign</h4>
+            <p>On the employee form, set the <em>Work Location</em> field. The geofence summary appears right below it for confirmation.</p>
+        </div>
+        <div class="oe_span4">
+            <h4 style="color:#2163E8;">3. Enforce</h4>
+            <p>When the employee tries to check in, Odoo captures the GPS position and the module verifies the distance before accepting the record.</p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Feature summary</h2>
+            <table class="table table-striped" style="background-color:#ffffff;">
+                <tr><th style="width:50%;">Feature</th><th>Included</th></tr>
+                <tr><td>Per-location geofence toggle</td><td>Yes</td></tr>
+                <tr><td>Manual coordinate entry</td><td>Yes</td></tr>
+                <tr><td>Interactive map picker with address search</td><td>Yes</td></tr>
+                <tr><td>"Use my location" button</td><td>Yes</td></tr>
+                <tr><td>Per-day work location resolution</td><td>Yes</td></tr>
+                <tr><td>Compatible with Odoo date-based employee versions</td><td>Yes</td></tr>
+                <tr><td>Server-side validation (Haversine)</td><td>Yes</td></tr>
+                <tr><td>Kiosk Mode support</td><td>Yes</td></tr>
+                <tr><td>My Attendance page support</td><td>Yes</td></tr>
+                <tr><td>Multi-company aware</td><td>Yes</td></tr>
+                <tr><td>Geofence tagging on each attendance record</td><td>Yes</td></tr>
+                <tr><td>English and Arabic translations</td><td>Yes</td></tr>
+                <tr><td>RTL layout support</td><td>Yes</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">External services used</h2>
+            <p class="oe_mt32">
+                The map picker relies on the following free, open services.
+                Listed here for full transparency. The core attendance check
+                does not depend on any of them and works fully offline.
+            </p>
+            <table class="table table-striped" style="background-color:#ffffff;">
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Data sent</th>
+                </tr>
+                <tr>
+                    <td>Leaflet (unpkg CDN)</td>
+                    <td>Loads the Leaflet JavaScript library and stylesheet that render the map.</td>
+                    <td>None - only file requests.</td>
+                </tr>
+                <tr>
+                    <td>OpenStreetMap tile servers</td>
+                    <td>Serves the map background tiles displayed in the picker.</td>
+                    <td>Map view coordinates and zoom level only.</td>
+                </tr>
+                <tr>
+                    <td>OpenStreetMap Nominatim</td>
+                    <td>Searches addresses entered in the search box.</td>
+                    <td>The text typed in the search box.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Compatibility</h2>
+            <table class="table table-striped" style="background-color:#ffffff;">
+                <tr>
+                    <th style="width:40%;">Deployment</th>
+                    <th>Supported</th>
+                </tr>
+                <tr>
+                    <td>Odoo 19.0 Community</td>
+                    <td>Yes - tested</td>
+                </tr>
+                <tr>
+                    <td>Odoo 19.0 Enterprise</td>
+                    <td>Yes - compatible (no Enterprise-only dependencies)</td>
+                </tr>
+                <tr>
+                    <td>Odoo.sh (Community or Enterprise)</td>
+                    <td>Yes - install via Git repository</td>
+                </tr>
+                <tr>
+                    <td>Odoo Online (SaaS)</td>
+                    <td>No - Odoo Online does not support third-party modules</td>
+                </tr>
+            </table>
+            <h3 class="oe_slogan" style="text-align:left; margin-top:24px;">Requirements</h3>
+            <ul>
+                <li>Odoo 19.0</li>
+                <li>Depends on the standard <code>hr_attendance</code> module</li>
+                <li>HTTPS is required in production for browser geolocation to work</li>
+                <li>Employees must grant location permission to their browser</li>
+                <li>The map picker requires internet access on the manager's computer; the attendance enforcement does not.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Support</h2>
+            <p style="text-align:center;">
+                For questions, bug reports, or custom development requests,
+                please reach out to <strong>SaudiERP</strong>:
+            </p>
+            <p style="text-align:center;">
+                <strong>Email:</strong> <a href="mailto:support@saudierp.work">support@saudierp.work</a>
+                <br/>
+                <strong>Website:</strong> <a href="https://saudierp.work">saudierp.work</a>
+            </p>
+        </div>
+    </div>
+</section>

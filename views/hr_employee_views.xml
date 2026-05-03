@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_hr_employee_form_geofence" model="ir.ui.view">
+        <field name="name">hr.employee.form.geofence</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_location_id']" position="after">
+                <field name="work_location_use_geofence"
+                       string="Geofence Enabled"
+                       readonly="1"
+                       invisible="not work_location_id"/>
+                <label for="work_location_latitude"
+                       string="Geofence Area"
+                       invisible="not work_location_use_geofence"/>
+                <div class="o_row" invisible="not work_location_use_geofence">
+                    <field name="work_location_latitude" readonly="1" nolabel="1"/>
+                    <span>,</span>
+                    <field name="work_location_longitude" readonly="1" nolabel="1"/>
+                    <span>(radius</span>
+                    <field name="work_location_radius" readonly="1" nolabel="1"/>
+                    <span>m)</span>
+                </div>
+                <field name="geofence_active_location_id"
+                       string="Active Geofence Today"
+                       readonly="1"
+                       invisible="not geofence_active_location_id"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
