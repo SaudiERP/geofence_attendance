@@ -1,8 +1,3 @@
-# -----------------------------------------------------------------------------
-# Before publishing on the Odoo Apps store, replace the four PLACEHOLDER
-# values below (author, maintainer, website, support) with your real
-# company details. Odoo Store rejects modules with placeholder metadata.
-# -----------------------------------------------------------------------------
 {
     'name': 'Geofence Attendance',
     'version': '19.0.1.2.0',
