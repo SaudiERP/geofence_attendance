@@ -68,7 +68,7 @@ Odoo 19.0 Community and Enterprise. Depends only on the standard
     'images': [
         'static/description/banner.png',
     ],
-    'price': 145.00,
+    'price': 99.00,
     'currency': 'USD',
     'installable': True,
     'application': False,
